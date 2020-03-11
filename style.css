@@ -1,0 +1,123 @@
+body{
+    display: flex;
+   
+}
+.leftHandSide{
+    display: flex;
+    width: 80%;
+    background-color: rgb(245, 245, 245);
+}
+.topLeft{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    direction: rtl;
+    flex-direction: row-reverse;
+}
+.messages{
+    display: flex;
+    flex-direction: row-reverse;
+    border: solid black 2px;
+    border-radius: 7px;
+    width: 20%;
+    
+}
+.picMessages{
+ background-color: rgb(91, 131, 253);
+ display: flex;
+ flex: 1;
+ justify-content: center;
+ align-items: center;
+}
+.textMessages{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+}
+.encyclopedias{
+    display: flex;
+    flex-direction: row-reverse;
+    border: solid black 2px;
+    border-radius: 7px;
+    width: 20%;
+
+}
+.textEncyclopedias{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+
+}
+.picEncyclopedias{
+ background-color: rgb(237, 69, 86);
+ display: flex;
+ flex: 1;
+ justify-content: center;
+ align-items: center;
+}
+.tickets{
+    display: flex;
+    flex-direction: row-reverse;
+    border: solid black 2px;
+    border-radius: 7px;
+    width: 20%;
+
+}
+.textTickets{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+}
+.picTickets{
+background-color: rgb(243, 160, 30);
+display: flex;
+ flex: 1;
+ justify-content: center;
+ align-items: center;
+}
+.users{
+    display: flex;
+    flex-direction: row-reverse;
+    border: solid black 2px;
+    border-radius: 7px;
+    width: 20%;
+
+}
+.textUsers{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+}
+.picUsers{
+background-color: rgb(97, 112, 227);
+display: flex;
+ flex: 1;
+ justify-content: center;
+ align-items: center;
+}
+[class*="pic" ]{
+    align-items: center;
+}
+[class*="lowText" ]{
+    display: flex;
+}
+[class*="text" ]{
+    font-family: shabnam;
+}
+@font-face{
+    font-family: shabnam;
+    src: url(/Fonts/Shabnam.ttf);
+    
+}
