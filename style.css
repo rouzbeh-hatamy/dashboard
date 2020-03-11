@@ -1,123 +1,211 @@
-body{
+body {
     display: flex;
-   
+    height: 100%;
+
 }
-.leftHandSide{
+
+.leftHandSide {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 80%;
+    height: 100%;
     background-color: rgb(245, 245, 245);
 }
-.topLeft{
+
+.topLeft {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    height: 20%;
     direction: rtl;
     flex-direction: row-reverse;
 }
-.messages{
+
+.messages {
     display: flex;
     flex-direction: row-reverse;
-    border: solid black 2px;
-    border-radius: 7px;
-    width: 20%;
-    
-}
-.picMessages{
- background-color: rgb(91, 131, 253);
- display: flex;
- flex: 1;
- justify-content: center;
- align-items: center;
-}
-.textMessages{
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: white;
-}
-.encyclopedias{
-    display: flex;
-    flex-direction: row-reverse;
-    border: solid black 2px;
+    box-shadow: black -1px 2px 5px;
     border-radius: 7px;
     width: 20%;
 
 }
-.textEncyclopedias{
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: white;
 
-}
-.picEncyclopedias{
- background-color: rgb(237, 69, 86);
- display: flex;
- flex: 1;
- justify-content: center;
- align-items: center;
-}
-.tickets{
+.picMessages {
+    background-image: linear-gradient(to top, rgb(96, 125, 255), rgb(35, 197, 246));
     display: flex;
-    flex-direction: row-reverse;
-    border: solid black 2px;
-    border-radius: 7px;
-    width: 20%;
-
-}
-.textTickets{
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: white;
-}
-.picTickets{
-background-color: rgb(243, 160, 30);
-display: flex;
- flex: 1;
- justify-content: center;
- align-items: center;
-}
-.users{
-    display: flex;
-    flex-direction: row-reverse;
-    border: solid black 2px;
-    border-radius: 7px;
-    width: 20%;
-
-}
-.textUsers{
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 10px;
-    background-color: white;
-}
-.picUsers{
-background-color: rgb(97, 112, 227);
-display: flex;
- flex: 1;
- justify-content: center;
- align-items: center;
-}
-[class*="pic" ]{
+    flex: 1;
+    justify-content: center;
     align-items: center;
 }
-[class*="lowText" ]{
+
+.textMessages {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+}
+
+.encyclopedias {
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: black -1px 2px 5px;
+    border-radius: 7px;
+    width: 20%;
+
+}
+
+.textEncyclopedias {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.picEncyclopedias {
+    background-color: rgb(237, 69, 86);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickets {
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: black -1px 2px 5px;
+    border-radius: 7px;
+    width: 20%;
+
+}
+
+.textTickets {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+}
+
+.picTickets {
+    background-image: linear-gradient(to top, rgb(230, 140, 6), rgb(254, 197, 58));
+
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.users {
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: black -1px 2px 5px;
+    border-radius: 7px;
+    width: 20%;
+
+}
+
+.textUsers {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: white;
+}
+
+.picUsers {
+    background-color: rgb(97, 112, 227);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+[class*="pic"] {
+    align-items: center;
+}
+
+[class*="lowText"] {
     display: flex;
 }
-[class*="text" ]{
+
+[class*="text"] {
     font-family: shabnam;
 }
-@font-face{
+
+.midLeft {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 35%;
+}
+
+.summary {
+    display: flex;
+    background-color: white;
+    width: 30%;
+    box-shadow: black -1px 2px 5px;
+    border-radius: 7px;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+.sumTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.sumText {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    border-bottom: solid teal 2px;
+}
+
+.bar {
+    border: solid gray 1px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 12px;
+    height: fit-content;
+}
+
+.edit {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: black -1px 2px 5px;
+    background-image: linear-gradient(to bottom right, rgb(141, 95, 229), rgb(93, 103, 227));
+    width: 60%;
+}
+
+.sumLow {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.lowLeft {
+    display: flex;
+    width: 100%;
+    height: 35%;
+}
+
+@font-face {
     font-family: shabnam;
     src: url(/Fonts/Shabnam.ttf);
-    
+
 }
