@@ -5,7 +5,20 @@ html {
 
 body {
     display: flex;
+    width: 100%;
     height: 100%;
+    direction: rtl;
+    background-color: rgb(245, 245, 245);
+
+}
+
+.rightHandSide {
+    width: 20%;
+    height: 100vh;
+}
+
+#datetime {
+    font-family: Shabnam;
 }
 
 .leftHandSide {
@@ -13,13 +26,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     width: 80%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
-    background-color: rgb(245, 245, 245);
 }
 
 .topLeft {
@@ -48,6 +54,7 @@ li {
     border-radius: 7px;
     width: 22%;
     height: 110px;
+    transition: width 1s;
 
 }
 
@@ -76,6 +83,7 @@ li {
     border-radius: 7px;
     width: 22%;
     height: 110px;
+    transition: width 1s;
 
 
 }
@@ -105,7 +113,15 @@ li {
     border-radius: 7px;
     width: 22%;
     height: 110px;
+    transition: width 1s;
+}
 
+.tickets:hover,
+.messages:hover,
+.users:hover,
+.encyclopedias:hover {
+    width: 25%;
+    cursor: pointer;
 }
 
 .textTickets {
@@ -133,6 +149,7 @@ li {
     border-radius: 7px;
     width: 22%;
     height: 110px;
+    transition: width 1s;
 
 }
 
@@ -191,25 +208,57 @@ li {
     display: flex;
     width: 100%;
     justify-content: space-between;
-
+    flex-direction: row-reverse;
 }
 
 .sumText {
     display: flex;
     width: 50%;
-    justify-content: flex-end;
+    justify-content: flex-start;
     border-bottom: solid teal 2px;
 }
 
-.bar {
-    border: solid gray 1px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0px 5px;
-    text-align: center;
+.dropbtn {
+    font-family: shabnam;
+    font-weight: bold;
+    padding: 8px 15px;
+    word-spacing: 2px;
+    font-size: 10px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
     font-size: 12px;
-    height: fit-content;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    background-image: linear-gradient(to bottom right, rgb(141, 95, 229), rgb(140, 146, 233));
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(97, 112, 227);
 }
 
 .edit {
@@ -219,6 +268,7 @@ li {
     box-shadow: black -1px 2px 5px;
     background-image: linear-gradient(to bottom right, rgb(141, 95, 229), rgb(140, 146, 233));
     width: 60%;
+    flex-direction: row-reverse;
 }
 
 .sumLow {
@@ -247,6 +297,7 @@ li {
 
 .messageBoxText {
     border-bottom: teal solid 2px;
+    padding-bottom: 10px;
     width: 50%;
     font-family: shabnam;
 }
@@ -266,7 +317,7 @@ li {
     overflow: hidden;
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .tab button {
@@ -299,7 +350,16 @@ li {
     border-top: none;
 }
 
+.rightHandSide {
+    display: flex;
+}
+
 @font-face {
-    font-family: shabnam;
-    src: url(/Fonts/Shabnam.ttf);
+    font-family: Shabnam;
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot');
+    src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff2') format('woff2'),
+        url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff') format('woff'),
+        url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.ttf') format('truetype');
+    font-weight: normal;
 }
