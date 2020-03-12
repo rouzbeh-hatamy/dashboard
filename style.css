@@ -1,15 +1,24 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
 body {
     display: flex;
     height: 100%;
-
 }
 
 .leftHandSide {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 80%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
     background-color: rgb(245, 245, 245);
 }
 
@@ -22,13 +31,24 @@ body {
     flex-direction: row-reverse;
 }
 
+ul {
+    list-style-type: none;
+    font-size: 12px;
+    padding: 0px;
+}
+
+li {
+    margin: 9px 0;
+}
+
 .messages {
     display: flex;
     flex-direction: row-reverse;
     box-shadow: black -1px 2px 5px;
     border-radius: 7px;
-    width: 20%;
-    height: fit-content;
+    width: 22%;
+    height: 110px;
+
 }
 
 .picMessages {
@@ -37,6 +57,7 @@ body {
     flex: 1;
     justify-content: center;
     align-items: center;
+
 }
 
 .textMessages {
@@ -53,7 +74,9 @@ body {
     flex-direction: row-reverse;
     box-shadow: black -1px 2px 5px;
     border-radius: 7px;
-    width: 20%;
+    width: 22%;
+    height: 110px;
+
 
 }
 
@@ -80,7 +103,8 @@ body {
     flex-direction: row-reverse;
     box-shadow: black -1px 2px 5px;
     border-radius: 7px;
-    width: 20%;
+    width: 22%;
+    height: 110px;
 
 }
 
@@ -107,7 +131,8 @@ body {
     flex-direction: row-reverse;
     box-shadow: black -1px 2px 5px;
     border-radius: 7px;
-    width: 20%;
+    width: 22%;
+    height: 110px;
 
 }
 
@@ -130,14 +155,18 @@ body {
 
 [class*="pic"] {
     align-items: center;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
 }
 
 [class*="lowText"] {
-    display: flex;
+    display: inline;
 }
 
 [class*="text"] {
     font-family: shabnam;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 .midLeft {
@@ -188,7 +217,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     box-shadow: black -1px 2px 5px;
-    background-image: linear-gradient(to bottom right, rgb(141, 95, 229), rgb(93, 103, 227));
+    background-image: linear-gradient(to bottom right, rgb(141, 95, 229), rgb(140, 146, 233));
     width: 60%;
 }
 
@@ -204,7 +233,8 @@ body {
     width: 100%;
     height: 35%;
 }
-.messageBox{
+
+.messageBox {
     display: flex;
     background-color: white;
     width: 30%;
@@ -212,14 +242,16 @@ body {
     border-radius: 7px;
     flex-direction: column;
     padding: 10px;
-    direction: rtl; 
+    direction: rtl;
 }
-.messageBoxText{
+
+.messageBoxText {
     border-bottom: teal solid 2px;
     width: 50%;
     font-family: shabnam;
 }
-.tabCon{
+
+.tabCon {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -229,12 +261,14 @@ body {
     border-radius: 10px;
     width: 60%;
 }
+
 .tab {
     overflow: hidden;
     width: 100%;
     display: flex;
     flex-direction: row-reverse;
-  }
+}
+
 .tab button {
     background-color: inherit;
     float: left;
@@ -246,27 +280,26 @@ body {
     font-family: shabnam;
     opacity: 0.5;
 
-  }
-  
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  .tab button.active {
-      border-bottom: solid 2px rgb(97, 112, 227);
-      opacity: 1;
+}
 
-  }
-  
-  .tabcontent {
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    border-bottom: solid 2px rgb(97, 112, 227);
+    opacity: 1;
+
+}
+
+.tabcontent {
     display: block;
     direction: rtl;
     padding: 6px 12px;
     border-top: none;
-  }
-  
+}
+
 @font-face {
     font-family: shabnam;
     src: url(/Fonts/Shabnam.ttf);
-
 }
