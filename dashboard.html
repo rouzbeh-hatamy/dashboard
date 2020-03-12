@@ -26,10 +26,10 @@
                 </div>
                 <div class="textMessages">
                     <p>تعداد کل خبر ها</p>
-                    <p>1253 </p>
+                    <p style=" font-weight: bold;">۱۲۵۳ </p>
                     <div class="lowText">
-                        <p style="color: red;">&#8595; 6.2%</p>
-                        <p style="font-size: 10px;">نسبت به ماه گذشته</p>
+                        <p style="color: red;">&#8595; ۶.۲%</p>
+                        <p>نسبت به ماه گذشته</p>
                     </div>
                 </div>
             </div>
@@ -39,9 +39,9 @@
                 </div>
                 <div class="textEncyclopedias">
                     <p> تعداد کل دانشنامه ها</p>
-                    <p>619 </p>
+                    <p style=" font-weight: bold;">۶۱۹ </p>
                     <div class="lowText">
-                        <p style="color: rgb(19, 205, 142);">&#8593; 4.6%</p>
+                        <p style="color: rgb(19, 205, 142);">&#8593; ۴.۶%</p>
                         <p style="font-size: 10px;">نسبت به ماه گذشته</p>
                     </div>
                 </div>
@@ -52,9 +52,9 @@
                 </div>
                 <div class="textTickets">
                     <p> تعداد کل تیکت ها</p>
-                    <p>856 </p>
+                    <p style=" font-weight: bold;">۸۵۶ </p>
                     <div class="lowText">
-                        <p style="color: rgb(97, 112, 227);">523</p>
+                        <p style="color: rgb(97, 112, 227);">۵۲۳</p>
                         <p style="font-size: 10px;">تیکت بسته شده</p>
                     </div>
                 </div>
@@ -65,9 +65,9 @@
                 </div>
                 <div class="textUsers">
                     <p> تعداد کل کاربران</p>
-                    <p>238 </p>
+                    <p style=" font-weight: bold;">۲۳۸ </p>
                     <div class="lowText">
-                        <p style="color: rgb(97, 112, 227);">145</p>
+                        <p style="color: rgb(97, 112, 227);">۱۴۵</p>
                         <p style="font-size: 10px;">کاربر فعال</p>
                     </div>
                 </div>
@@ -90,12 +90,32 @@
             </div>
         </div>
         <div class="lowLeft">
+            <div class="messageBox">
+                <p class="messageBoxText">صندوق پیام</p>
+            </div>
+            <div class="tabCon">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'starTicket')">تیکت ستاره دار</button>
+                    <button class="tablinks" onclick="openCity(event, 'open')">باز</button>
+                    <button class="tablinks" onclick="openCity(event, 'closed')">بسته</button>
+                </div>
+                <div id="starTicket" class="tabcontent">
+                    
+                </div>
 
+                <div id="open" class="tabcontent">
+                   
+                </div>
+
+                <div id="closed" class="tabcontent">
+                    
+                </div>
+            </div>
         </div>
     </div>
     </div>
     <div class="rightHandSide"></div>
-    <script src="" async defer></script>
+    <script src="scripts.js" async defer></script>
 </body>
 
 </html>
