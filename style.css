@@ -15,10 +15,61 @@ body {
 .rightHandSide {
     width: 20%;
     height: 100vh;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 20px;
 }
 
 #datetime {
     font-family: Shabnam;
+    display: flex;
+    font-weight: bold;
+    text-align: center;
+    font-size: 4vh;
+    color: rgb(98, 84, 229);
+    letter-spacing: 20px;
+    padding: 30px 0;
+    justify-content: center;
+    width: 100%;
+    cursor: default;
+}
+
+.userId {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.userPic {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.userProfilePic {
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.userInfo {
+    font-family: shabnam;
+    font-weight: bold;
+    font-size: 200px;
+}
+
+.role {
+    color: rgb(124, 124, 124);
+    transition: 0.5s;
+}
+
+.role:hover {
+    color: black;
+    cursor: pointer;
 }
 
 .leftHandSide {
@@ -26,6 +77,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     width: 80%;
+    cursor: default;
+
 }
 
 .topLeft {
@@ -224,41 +277,17 @@ li {
     padding: 8px 15px;
     word-spacing: 2px;
     font-size: 10px;
-    border: none;
-    border-radius: 9px;
+    border: solid 0.5px #919191;
+    border-radius: 5px;
     cursor: pointer;
+    width: fit-content;
+    height: fit-content;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    width: fit-content;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
+    background-color: rgb(225, 227, 250);
+    font-weight: bold;
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    font-size: 12px;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-    background-image: linear-gradient(to bottom right, rgb(141, 95, 229), rgb(140, 146, 233));
-
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-
-}
-
-.dropdown:hover .dropbtn {
-    background-color: rgb(97, 112, 227);
 }
 
 .edit {

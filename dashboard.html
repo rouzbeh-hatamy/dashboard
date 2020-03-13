@@ -13,7 +13,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <script type="text/javascript" src="ul.js"></script>
 
 
 </head>
@@ -23,8 +24,39 @@
         <div class="time">
             <p><span id="datetime"></span></p>
         </div>
-        <div class="userId"></div>
-        <div class="lowList"></div>
+        <div class="userId">
+            <div class="userPic">
+                <a href="#"> <img class="userProfilePic" src="/Pic/user.jpg" alt=""></a>
+            </div>
+            <div class="userInfo">
+                <ul>
+                    <a href="#" style="text-decoration: none; color:black; font-size: large;">
+                        <li> روزبه حاتمی</li>
+                    </a>
+                    <a href="#" style="text-decoration: none;">
+                        <li class="role">توسعه دهنده</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="lowList">
+
+            <ul class="col_ul">
+                <li><i class="fas fa-desktop-alt"></i> داشبورد</li>
+                <li><i class="fas fa-comment-alt-lines"></i> صندوق پیام</li>
+                <li><i class="fas fa-ticket-alt"></i> تیکت</li>
+                <li><span><i class="fas fa-books"></i> دانشنامه</span>
+                    <ul>
+                        <li>
+                            همه دانشنامه ها
+                        </li>
+                        <li>پیش نویس ها</li>
+                    </ul>
+                </li>
+                <li><i class="fas fa-newspaper"></i>اخبار</li>
+                <li><i class="fas fa-cog"></i> مدیریت</li>
+            </ul>
+        </div>
     </div>
     <div class="leftHandSide">
         <div class="topLeft">
@@ -83,18 +115,15 @@
         </div>
         <div class="midLeft">
             <div class="edit">
-                <a href="#"><i class="far fa-edit" style="color: black;"></i></a>
+                <a href="#"><i class="fal fa-edit" style="color: black;"></i></a>
             </div>
             <div class="summary" style="font-family: shabnam;">
                 <div class="sumTop">
-                    <div class="dropdown">
-                        <button class="dropbtn">بازه زمانی</button>
-                        <div class="dropdown-content">
-                            <a href="#">ماه گذشته</a>
-                            <a href="#">هفته گذشته</a>
-                            <a href="#">روز گذشته</a>
-                        </div>
-                    </div>
+                    <select class="dropbtn">
+                        <option class="dropdown-content">ماه گذشته</option>
+                        <option class="dropdown-content"> هفته گذشته</option>
+                        <option class="dropdown-content"> روز گذشته</option>
+                    </select>
                     <div class="sumText">
                         <p>خلاصه عملکرد</p>
                     </div>
