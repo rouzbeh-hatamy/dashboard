@@ -411,3 +411,108 @@ li {
         url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.ttf') format('truetype');
     font-weight: normal;
 }
+
+@media screen and (max-width:500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: inherit;
+    }
+
+    .rightHandSide {
+        display: flex;
+        width: 100%;
+    }
+
+    .lowList {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .userPic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .leftHandSide {
+        display: flex;
+    }
+
+    .topLeft {
+        display: flex;
+        width: 90%;
+        height: fit-content;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .messages {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .encyclopedias {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tickets {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .tickets:hover,
+    .messages:hover,
+    .users:hover,
+    .encyclopedias:hover {
+        width: 110%;
+    }
+
+    .users {
+        display: flex;
+        justify-content: center;
+        border-radius: 7px;
+        width: 100%;
+
+
+    }
+
+    .midLeft {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .edit {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .summary {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .lowLeft {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .tabCon {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .messageBox {
+        width: 100%;
+        height: 40vh;
+    }
+}
