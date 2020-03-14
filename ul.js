@@ -2,6 +2,7 @@ window.onload = function  () {
 	var li_ul = document.querySelectorAll(".col_ul li  ul");
     for (var i = 0; i < li_ul.length; i++) {
         li_ul[i].style.display = "none"
+        
     };
 
     var exp_li = document.querySelectorAll(".col_ul li > span");

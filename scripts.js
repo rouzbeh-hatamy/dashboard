@@ -14,5 +14,9 @@ function openCity(evt, tabName) {
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+let myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleTimeString('fa-IR');
+}
