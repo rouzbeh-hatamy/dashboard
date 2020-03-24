@@ -109,6 +109,10 @@ body {
     flex-direction: row-reverse;
 }
 
+#plusIcon {
+    display: none;
+}
+
 ul {
     list-style-type: none;
     font-size: 12px;
@@ -398,9 +402,7 @@ li {
     border-top: none;
 }
 
-.rightHandSide {
-    display: flex;
-}
+
 
 @font-face {
     font-family: Shabnam;
@@ -421,8 +423,15 @@ li {
     }
 
     .rightHandSide {
-        display: flex;
+        display: none;
         width: 100%;
+    }
+
+    #plusIcon {
+        display: flex;
+        font-size: xx-large;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     .lowList {
