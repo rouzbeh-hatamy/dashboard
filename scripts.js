@@ -38,3 +38,133 @@ function plus() {
     }
 
 }
+
+
+
+////chart
+
+
+var ctx = document.getElementById('myChart').getContext("2d");
+var gradientFill = ctx.createLinearGradient(0, 0, 0, 110);
+    gradientFill.addColorStop(0, "rgba(239, 158, 27, 1)");
+    gradientFill.addColorStop(1, "rgba(248, 216, 163, 0.1)");
+    var gradientFill2 = ctx.createLinearGradient(0, 0, 0, 110);
+    gradientFill2.addColorStop(0, "rgba(96, 125, 255,1)");
+    gradientFill2.addColorStop(1, "rgba(35, 197, 246,0.1)");
+    var gradientFill3 = ctx.createLinearGradient(0, 0, 0, 110);
+    gradientFill3.addColorStop(0, "rgba(235, 69, 79,1)");
+    gradientFill3.addColorStop(1, "rgba(243, 72, 127,0.1)");
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: [0, 5, 10, 15, 20, 25, 30],
+        datasets: [{
+            label: 'تیکت',
+            data: [{
+                y: 10,
+            }, {
+                x: 5,
+                y: 20
+            }, {
+                x: 10,
+                y: 32
+            }, {
+                x: 15,
+                y: 10
+            }, {
+                x: 20,
+                y: 47
+            }, {
+                x: 25,
+                y: 10
+            }, {
+                x: 30,
+                y: 17
+            }],
+            backgroundColor: gradientFill,
+            borderColor: [
+                '#ef9c18'
+            ],
+            borderWidth: 1,
+            lineTension: 0,
+        },{
+            label: 'دانشنامه',
+            data: [{
+                y: 5,
+            }, {
+                x: 5,
+                y: 35
+            }, {
+                x: 10,
+                y: 40
+            }, {
+                x: 15,
+                y: 8
+            }, {
+                x: 20,
+                y: 32
+            }, {
+                x: 25,
+                y: 5
+            }, {
+                x: 30,
+                y: 10
+            }],
+            backgroundColor: gradientFill3,
+            borderColor: [
+                '#eb454f'
+            ],
+            borderWidth: 1,
+            lineTension: 0,
+
+
+
+
+        },{
+
+            label: 'خبر',
+            data: [{
+                y: 15,
+            }, {
+                x: 5,
+                y: 10
+            }, {
+                x: 10,
+                y: 25
+            }, {
+                x: 15,
+                y: 3
+            }, {
+                x: 20,
+                y: 28
+            }, {
+                x: 25,
+                y: 15
+            }, {
+                x: 30,
+                y: 27
+            }],
+            backgroundColor: gradientFill2,
+            borderColor: [
+                '#6087FF'
+            ],
+            borderWidth: 1,
+            lineTension: 0,
+
+
+
+
+
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    },
+
+});
