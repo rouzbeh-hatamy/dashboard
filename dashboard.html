@@ -51,7 +51,7 @@
                 <a href="#" style="text-decoration: none; color: inherit;">
                     <li><i class="fas fa-ticket-alt"></i> تیکت</li>
                 </a>
-                <li><span><i class="fas fa-books"></i> دانشنامه</span>
+                <li><span><i class="fas fa-books"></i> دانشنامه &#11163;</span>
                     <ul>
                         <a href="#" style="text-decoration: none; color: inherit;">
                             <li>
@@ -74,6 +74,16 @@
         </div>
     </div>
     <div class="leftHandSide">
+        <div id="navbar">
+          <div class="searchDiv">
+            <i class="fas fa-search searchIcon"></i>
+            <input type="search" name="search" id="search" placeholder="عبارت مورد نظر را جستجو کنید">
+          </div>
+            <div class="navIcons">
+                <i class="fas fa-comment-alt"></i>
+                <i class="fas fa-bell"></i>
+            </div>
+        </div>
         <div class="topLeft">
             <div class="messages">
                 <div class="picMessages">
@@ -108,7 +118,7 @@
                 <div class="textTickets">
                     <ul>
                         <li>تعداد کل تیکت ها</li>
-                        <li style="font-weight: bold;">856</li>
+                        <li style="font-weight: bold;">۸۵۶</li>
                         <li class="lowText" style="font-size: 14px; color: rgb(97, 112, 227);">۵۲۳</li>
                         <li class="lowText">تیکت بسته شده</li>
                     </ul>
@@ -145,9 +155,9 @@
                 </div>
                 <div class="sumLow">
                     <div class="chart-container">
-                        <canvas id="myChart" ></canvas>
+                        <canvas id="myChart" height="210px"></canvas>
                     </div>
-                    
+
 
 
                 </div>
@@ -155,6 +165,11 @@
         </div>
         <div class="lowLeft">
             <div class="tabCon">
+                <select class="dropbtn1">
+                    <option class="dropdown-content">ماه گذشته</option>
+                    <option class="dropdown-content"> هفته گذشته</option>
+                    <option class="dropdown-content"> روز گذشته</option>
+                </select>
                 <div class="tab">
                     <button class="tablinks" onclick="openCity(event, 'starTicket')">تیکت ستاره دار</button>
                     <button class="tablinks" onclick="openCity(event, 'open')">باز</button>
@@ -171,14 +186,27 @@
                 <div id="closed" class="tabcontent">
 
                 </div>
+
             </div>
             <div class="messageBox">
-                <p class="messageBoxText">صندوق پیام</p>
+                <div class="messageBoxTop">
+                    <select class="dropbtn">
+                        <option class="dropdown-content">ماه گذشته</option>
+                        <option class="dropdown-content"> هفته گذشته</option>
+                        <option class="dropdown-content"> روز گذشته</option>
+                    </select>
+                    <div class="messageBoxTextDiv">
+                        <p>صندوق پیام</p>
+                    </div>
+                </div>
+                <div class="messageBoxLow"></div>
+
             </div>
         </div>
     </div>
     </div>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js">
+    </script>
     <script src="scripts.js" async defer></script>
 </body>
 

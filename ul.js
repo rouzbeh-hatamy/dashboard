@@ -13,9 +13,10 @@ window.onload = function () {
 
     function showul() {
         nextul = this.nextElementSibling;
-        if (nextul.style.display == "block")
+        if (nextul.style.display == "flex")
             nextul.style.display = "none";
         else
-            nextul.style.display = "block";
+            nextul.style.display = "flex";
+            nextul.style.flexDirection = "column";
     }
 }

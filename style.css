@@ -19,6 +19,7 @@ body {
     background-color: white;
     flex-direction: column;
     border-radius: 20px;
+    position: fixed;
 }
 
 #datetime {
@@ -26,7 +27,7 @@ body {
     display: flex;
     font-weight: bold;
     text-align: center;
-    font-size: 2rem;
+    font-size: 25px;
     color: rgb(98, 84, 229);
     letter-spacing: 10px;
     padding: 30px 0;
@@ -96,15 +97,49 @@ body {
     flex-direction: column;
     justify-content: space-around;
     width: 85%;
+    margin-right: 15%;
     cursor: default;
-
+    overflow-y: scroll;
 }
+#navbar {
+    background-color: white;
+    position: fixed; 
+    top: -50px; 
+    width: 100%; 
+    transition: top 0.3s;
+    box-shadow: gray 0px 0px 3px 1px;
+    border-bottom-right-radius:10px;
+    display: flex;
+    height: 40px;
+    padding-right: 20px;
+  }
+.searchDiv{
+width: 70%;
+display: flex;
+align-items: center;
+color: gray;
+  }
 
+#search{
+    border: none;
+    font-family: shabnam;
+    width: 30%;
+    padding-right: 5px;
+}
+.navIcons{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    color: gray;
+    justify-content: space-around;
+}
+.navIcons i:hover{
+    cursor: pointer;
+}
 .topLeft {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 20%;
     direction: rtl;
     flex-direction: row-reverse;
 }
@@ -126,7 +161,7 @@ li {
 .messages {
     display: flex;
     flex-direction: row-reverse;
-    box-shadow: black -1px 2px 5px;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     border-radius: 7px;
     width: 22%;
     height: 110px;
@@ -156,7 +191,7 @@ li {
 .encyclopedias {
     display: flex;
     flex-direction: row-reverse;
-    box-shadow: black -1px 2px 5px;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     border-radius: 7px;
     width: 22%;
     height: 110px;
@@ -177,7 +212,7 @@ li {
 }
 
 .picEncyclopedias {
-    background-image: linear-gradient(to top, rgb(235, 69, 79), rgb(243, 72, 127));
+    background-image: linear-gradient(to top, rgb(236, 69, 79), rgb(243, 72, 127));
     display: flex;
     flex: 1;
     justify-content: center;
@@ -187,7 +222,7 @@ li {
 .tickets {
     display: flex;
     flex-direction: row-reverse;
-    box-shadow: black -1px 2px 5px;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     border-radius: 7px;
     width: 22%;
     height: 110px;
@@ -203,9 +238,7 @@ li {
     opacity: 0;
     padding: 0;
 }
-.users:hover .picUsers{
-    width: 100%;
-}
+
 .users:hover,
 .tickets:hover,
 .encyclopedias:hover,
@@ -237,7 +270,7 @@ li {
 .users {
     display: flex;
     flex-direction: row-reverse;
-    box-shadow: black -1px 2px 5px;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     border-radius: 7px;
     width: 22%;
     height: 110px;
@@ -255,7 +288,7 @@ li {
 }
 
 .picUsers {
-    background-color: rgb(97, 112, 227);
+    background-image: linear-gradient(to top, rgb(94, 114, 227), rgb(128, 95, 228));
     display: flex;
     flex: 1;
     justify-content: center;
@@ -282,14 +315,15 @@ li {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 35%;
+    height: 300px;
+    padding: 20px 0;
 }
 
 .summary {
     display: flex;
     background-color: white;
     width: 30%;
-    box-shadow: black -1px 2px 5px;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     border-radius: 7px;
     flex-direction: column;
     padding: 10px;
@@ -305,9 +339,9 @@ li {
 
 .sumText {
     display: flex;
-    width: 50%;
+    width: 28%;
     justify-content: flex-start;
-    border-bottom: solid teal 2px;
+    border-bottom: solid #6257E4 2px;
 }
 
 .dropbtn {
@@ -322,7 +356,20 @@ li {
     width: fit-content;
     height: fit-content;
 }
-
+.dropbtn1 {
+    font-family: shabnam;
+    display: flex;
+    align-self: flex-end;
+    font-weight: bold;
+    padding: 8px 15px;
+    word-spacing: 2px;
+    font-size: 10px;
+    border: solid 0.5px #919191;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
 .dropdown-content {
     background-color: rgb(225, 227, 250);
     font-weight: bold;
@@ -333,7 +380,7 @@ li {
     display: flex;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: black -1px 2px 5px;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     background-image: linear-gradient(to bottom right, rgb(141, 95, 229), rgb(140, 146, 233));
     width: 60%;
     flex-direction: row-reverse;
@@ -347,35 +394,42 @@ li {
 .chart-container{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 22vh;
-    padding: 0px 35px;
-    box-sizing: border-box;
+    height: 36vh;
 }
 
 .lowLeft {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 35%;
+    height: 300px;
+    padding: 0 0 20px 0px;
 }
 
 .messageBox {
     display: flex;
     background-color: white;
     width: 30%;
-    box-shadow: black -1px 2px 5px;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     border-radius: 7px;
     flex-direction: column;
-    padding: 10px;
-    direction: rtl;
+    padding: 10px
+
 }
 
-.messageBoxText {
-    border-bottom: teal solid 2px;
-    padding-bottom: 10px;
-    width: 50%;
+.messageBoxTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.messageBoxTextDiv{
+    display: flex;
     font-family: shabnam;
+    width: 25%;
+    justify-content: flex-start;
+    border-bottom: solid #6257E4 2px;
 }
 
 .tabCon {
@@ -384,7 +438,7 @@ li {
     padding: 10px;
     width: 100%;
     background-color: white;
-    box-shadow: black -1px 2px 5px;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     border-radius: 10px;
     width: 60%;
 }
