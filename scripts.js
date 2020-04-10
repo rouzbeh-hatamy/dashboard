@@ -2,8 +2,7 @@
 
 function openCity(evt, tabName) {
     var i, tabcontent, tablinks;
-
-    tabcontent = document.getElementsByClassName("tabcontent");
+    tabcontent = document.getElementsByClassName("tabContent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }

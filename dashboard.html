@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <script type="text/javascript" src="ul.js"></script>
-
-
+    <link rel="stylesheet" href="./Assets/icons/icons.css">
 </head>
 
 <body>
@@ -75,11 +74,13 @@
     </div>
     <div class="leftHandSide">
         <div id="navbar">
-          <div class="searchDiv">
-            <i class="fas fa-search searchIcon"></i>
-            <input type="search" name="search" id="search" placeholder="عبارت مورد نظر را جستجو کنید">
-          </div>
+            <div class="searchDiv">
+                <i class="fas fa-search searchIcon"></i>
+                <input type="search" name="search" id="search" placeholder="عبارت مورد نظر را جستجو کنید">
+            </div>
             <div class="navIcons">
+                <span id="topNotifMessages">۸</span>
+                <span id="topNotifications"> ۲ </span>
                 <i class="fas fa-comment-alt"></i>
                 <i class="fas fa-bell"></i>
             </div>
@@ -140,7 +141,7 @@
         </div>
         <div class="midLeft">
             <div class="edit">
-                <a href="#"><i class="fal fa-edit" style="color: black;"></i></a>
+                <i class="fal fa-edit editIcon" style="color: black;"></i>
             </div>
             <div class="summary" style="font-family: shabnam;">
                 <div class="sumTop">
@@ -175,8 +176,320 @@
                     <button class="tablinks" onclick="openCity(event, 'open')">باز</button>
                     <button class="tablinks" onclick="openCity(event, 'closed')">بسته</button>
                 </div>
-                <div id="starTicket" class="tabcontent">
+                <div id="starTicket" class="tabContent">
+                    <table>
+                        <tr class="tableHead">
+                            <th class="titleFirstHeading">عنوان</th>
+                            <th>ایجاد شده توسط</th>
+                            <th class="titleThirdHeading" >اولویت</th>
+                            <th>آخرین پاسخ دهنده</th>
+                        </tr>
+                        <tr class="tableRow">
+                            <td class="tableFirstColumn">
+                                <div class="tableColorTag blueTag"></div>
+                                <div class="tableTitle">
+                                    <span class="tableTitleText">تعویض کارت صدای سیستم</span>
+                                    <div class="tableTitleDescription">
+                                        <div class="tableDescriptionGrayTag"></div>
+                                        <span class="tableDescriptionText"> عمومی </span>
+                                        <div class="tableDescriptionTag">
+                                            <a href="#" class="tableDescriptionTagLink">
+                                                <i class="fal fa-tags"></i>
+                                                <span>سند , مدیریت , سازمانی</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="madeBy">
+                                    <div class="tUserPic">
+                                        <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                    </div>
+                                    <div class="tUserInfo">
+                                        <span class="tableTitleText">مصطفی حسینی</span>
+                                        <Span>۳ روز پیش</Span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="priority">
+                                    <div class="priorityIcon"><span class="icon-medium-priority"><span
+                                                class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span></span></div>
+                                    <span>متوسط</span>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="responseBy">
+                                <div class="tUserPic">
+                                    <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                </div>
+                                <div class="tUserInfo">
+                                    <span class="tableTitleText">حمیدرضا مدنی</span>
+                                    <Span>۳ روز پیش</Span>
+                              </div>
+                            </td>
+                        </tr>
+                        
 
+
+
+
+                        <tr class="tableRow">
+                            <td class="tableFirstColumn">
+                                <div class="tableColorTag blueTag"></div>
+                                <div class="tableTitle">
+                                    <span class="tableTitleText">تعویض کارت صدای سیستم</span>
+                                    <div class="tableTitleDescription">
+                                        <div class="tableDescriptionGrayTag"></div>
+                                        <span class="tableDescriptionText"> عمومی </span>
+                                        <div class="tableDescriptionTag">
+                                            <a href="#" class="tableDescriptionTagLink">
+                                                <i class="fal fa-tags"></i>
+                                                <span>سند , مدیریت , سازمانی</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="madeBy">
+                                    <div class="tUserPic">
+                                        <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                    </div>
+                                    <div class="tUserInfo">
+                                        <span class="tableTitleText">مصطفی حسینی</span>
+                                        <Span>۳ روز پیش</Span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="priority">
+                                    <div class="priorityIcon"><span class="icon-medium-priority"><span
+                                                class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span></span></div>
+                                    <span>متوسط</span>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="responseBy">
+                                <div class="tUserPic">
+                                    <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                </div>
+                                <div class="tUserInfo">
+                                    <span class="tableTitleText">حمیدرضا مدنی</span>
+                                    <Span>۳ روز پیش</Span>
+                              </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+
+                        <tr class="tableRow">
+                            <td class="tableFirstColumn">
+                                <div class="tableColorTag blueTag"></div>
+                                <div class="tableTitle">
+                                    <span class="tableTitleText">تعویض کارت صدای سیستم</span>
+                                    <div class="tableTitleDescription">
+                                        <div class="tableDescriptionGrayTag"></div>
+                                        <span class="tableDescriptionText"> عمومی </span>
+                                        <div class="tableDescriptionTag">
+                                            <a href="#" class="tableDescriptionTagLink">
+                                                <i class="fal fa-tags"></i>
+                                                <span>سند , مدیریت , سازمانی</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="madeBy">
+                                    <div class="tUserPic">
+                                        <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                    </div>
+                                    <div class="tUserInfo">
+                                        <span class="tableTitleText">مصطفی حسینی</span>
+                                        <Span>۳ روز پیش</Span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="priority">
+                                    <div class="priorityIcon"><span class="icon-medium-priority"><span
+                                                class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span></span></div>
+                                    <span>متوسط</span>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="responseBy">
+                                <div class="tUserPic">
+                                    <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                </div>
+                                <div class="tUserInfo">
+                                    <span class="tableTitleText">حمیدرضا مدنی</span>
+                                    <Span>۳ روز پیش</Span>
+                              </div>
+                            </td>
+                        </tr>
+
+
+
+
+
+                        <tr class="tableRow">
+                            <td class="tableFirstColumn">
+                                <div class="tableColorTag blueTag"></div>
+                                <div class="tableTitle">
+                                    <span class="tableTitleText">تعویض کارت صدای سیستم</span>
+                                    <div class="tableTitleDescription">
+                                        <div class="tableDescriptionGrayTag"></div>
+                                        <span class="tableDescriptionText"> عمومی </span>
+                                        <div class="tableDescriptionTag">
+                                            <a href="#" class="tableDescriptionTagLink">
+                                                <i class="fal fa-tags"></i>
+                                                <span>سند , مدیریت , سازمانی</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="madeBy">
+                                    <div class="tUserPic">
+                                        <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                    </div>
+                                    <div class="tUserInfo">
+                                        <span class="tableTitleText">مصطفی حسینی</span>
+                                        <Span>۳ روز پیش</Span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="priority">
+                                    <div class="priorityIcon"><span class="icon-medium-priority"><span
+                                                class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span></span></div>
+                                    <span>متوسط</span>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="responseBy">
+                                <div class="tUserPic">
+                                    <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                </div>
+                                <div class="tUserInfo">
+                                    <span class="tableTitleText">حمیدرضا مدنی</span>
+                                    <Span>۳ روز پیش</Span>
+                              </div>
+                            </td>
+                        </tr>
+
+
+
+
+                        <tr class="tableRow">
+                            <td class="tableFirstColumn">
+                                <div class="tableColorTag blueTag"></div>
+                                <div class="tableTitle">
+                                    <span class="tableTitleText">تعویض کارت صدای سیستم</span>
+                                    <div class="tableTitleDescription">
+                                        <div class="tableDescriptionGrayTag"></div>
+                                        <span class="tableDescriptionText"> عمومی </span>
+                                        <div class="tableDescriptionTag">
+                                            <a href="#" class="tableDescriptionTagLink">
+                                                <i class="fal fa-tags"></i>
+                                                <span>سند , مدیریت , سازمانی</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="madeBy">
+                                    <div class="tUserPic">
+                                        <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                    </div>
+                                    <div class="tUserInfo">
+                                        <span class="tableTitleText">مصطفی حسینی</span>
+                                        <Span>۳ روز پیش</Span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="priority">
+                                    <div class="priorityIcon"><span class="icon-medium-priority"><span
+                                                class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span></span></div>
+                                    <span>متوسط</span>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="responseBy">
+                                <div class="tUserPic">
+                                    <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                </div>
+                                <div class="tUserInfo">
+                                    <span class="tableTitleText">حمیدرضا مدنی</span>
+                                    <Span>۳ روز پیش</Span>
+                              </div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr class="tableRow">
+                            <td class="tableFirstColumn">
+                                <div class="tableColorTag blueTag"></div>
+                                <div class="tableTitle">
+                                    <span class="tableTitleText">تعویض کارت صدای سیستم</span>
+                                    <div class="tableTitleDescription">
+                                        <div class="tableDescriptionGrayTag"></div>
+                                        <span class="tableDescriptionText"> عمومی </span>
+                                        <div class="tableDescriptionTag">
+                                            <a href="#" class="tableDescriptionTagLink">
+                                                <i class="fal fa-tags"></i>
+                                                <span>سند , مدیریت , سازمانی</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="madeBy">
+                                    <div class="tUserPic">
+                                        <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                    </div>
+                                    <div class="tUserInfo">
+                                        <span class="tableTitleText">مصطفی حسینی</span>
+                                        <Span>۳ روز پیش</Span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="priority">
+                                    <div class="priorityIcon"><span class="icon-medium-priority"><span
+                                                class="path1"></span><span class="path2"></span><span
+                                                class="path3"></span></span></div>
+                                    <span>متوسط</span>
+                                </div>
+                            </td>
+                            <td>
+                              <div class="responseBy">
+                                <div class="tUserPic">
+                                    <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                </div>
+                                <div class="tUserInfo">
+                                    <span class="tableTitleText">حمیدرضا مدنی</span>
+                                    <Span>۳ روز پیش</Span>
+                              </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
 
                 <div id="open" class="tabcontent">
