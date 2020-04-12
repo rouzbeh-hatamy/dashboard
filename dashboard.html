@@ -179,393 +179,347 @@
         <!-- third row, show tickets and messages -->
         <div class="ticketAndMessages">
             <!-- tickets -->
-            <div class="tabCon">
-                <select class="dropbtn1">
-                    <option class="dropdown-content">ماه گذشته</option>
-                    <option class="dropdown-content"> هفته گذشته</option>
-                    <option class="dropdown-content"> روز گذشته</option>
-                </select>
-                <div class="tab">
-                    <button class="tablinks active" onclick="openCity(event, 'starTicket')">تیکت ستاره دار</button>
-                    <button class="tablinks" onclick="openCity(event, 'open')">باز</button>
-                    <button class="tablinks" onclick="openCity(event, 'closed')">بسته</button>
+            <div class="ticketsShow">
+                <div class="ticketsShowTop">
+                    <select class="dropbtn">
+                        <option class="dropdown-content">ماه گذشته</option>
+                        <option class="dropdown-content"> هفته گذشته</option>
+                        <option class="dropdown-content"> روز گذشته</option>
+                    </select>
+                    <div class="tab">
+                        <button class="tablinks active" onclick="openCity(event, 'starTicket')">تیکت ستاره دار</button>
+                        <button class="tablinks" onclick="openCity(event, 'open')">باز</button>
+                        <button class="tablinks" onclick="openCity(event, 'closed')">بسته</button>
+                    </div>
                 </div>
-                <div id="starTicket" class="tabContent">
-                    <table>
-                        <tr class="tableHead">
-                            <th class="titleFirstHeading">عنوان</th>
-                            <th>ایجاد شده توسط</th>
-                            <th class="titleThirdHeading">اولویت</th>
-                            <th>آخرین پاسخ دهنده</th>
-                        </tr>
+                <div class="ticketsShowLow">
+                    <div id="starTicket" class="tabContent">
+                        <table>
+                            <tr class="tableHead">
+                                <th class="titleFirstHeading">عنوان</th>
+                                <th>ایجاد شده توسط</th>
+                                <th class="titleThirdHeading">اولویت</th>
+                                <th>آخرین پاسخ دهنده</th>
+                            </tr>
 
 
-                        <!-- first person, first row -->
-                        <tr class="tableRow">
-                            <td class="tableFirstColumn">
-                                <div class="tableColorTag blueTag"></div>
-                                <div class="tableTitle">
-                                    <span class="tableTitleText">تعویض کارت صدای سیستم</span>
-                                    <div class="tableTitleDescription">
-                                        <div class="tableDescriptionGrayTag"></div>
-                                        <span class="tableDescriptionText"> عمومی </span>
-                                        <div class="tableDescriptionTag">
-                                            <a href="#" class="tableDescriptionTagLink">
-                                                <i class="fal fa-tags"></i>
-                                                <span>سند , مدیریت , سازمانی</span>
-                                            </a>
+                            <!-- first person, first row -->
+                            <tr class="tableRow">
+                                <td class="tableFirstColumn">
+                                    <div class="tableColorTag blueTag"></div>
+                                    <div class="tableTitle">
+                                        <span class="tableTitleText">تعویض کارت صدای سیستم</span>
+                                        <div class="tableTitleDescription">
+                                            <div class="tableDescriptionGrayTag"></div>
+                                            <span class="tableDescriptionText"> عمومی </span>
+                                            <div class="tableDescriptionTag">
+                                                <a href="#" class="tableDescriptionTagLink">
+                                                    <i class="fal fa-tags"></i>
+                                                    <span>سند , مدیریت , سازمانی</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="madeBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/3rd.jpg" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">مصطفی حسینی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="priority">
-                                    <div class="priorityIcon"><span class="icon-high-priority"></span></div>
-                                    <span>فوری</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="responseBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/2nd.jpg" alt="" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">حمیدرضا مدنی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                            </td>
-                        </tr>
-
-                        <!-- second person, second row -->
-
-
-
-
-                        <tr class="tableRow">
-                            <td class="tableFirstColumn">
-                                <div class="tableColorTag blueTag"></div>
-                                <div class="tableTitle">
-                                    <span class="tableTitleText">خرابی لامپ های سقفی واحد سرور</span>
-                                    <div class="tableTitleDescription">
-                                        <div class="tableDescriptionGrayTag"></div>
-                                        <span class="tableDescriptionText"> عمومی </span>
-                                        <div class="tableDescriptionTag">
-                                            <a href="#" class="tableDescriptionTagLink">
-                                                <i class="fal fa-tags"></i>
-                                                <span>سند , مدیریت , سازمانی</span>
-                                            </a>
+                                </td>
+                                <td>
+                                    <div class="madeBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/3rd.jpg" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">مصطفی حسینی</span>
+                                            <Span>۳ روز پیش</Span>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="madeBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/5th.jpg" alt="" class="tUserPic">
+                                </td>
+                                <td>
+                                    <div class="priority">
+                                        <div class="priorityIcon"><span class="icon-high-priority"></span></div>
+                                        <span>فوری</span>
                                     </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">معین قاسمی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="priority">
-                                    <div class="priorityIcon"><span class="icon-low-priority"><span
-                                                class="path1"></span><span class="path2"></span><span
-                                                class="path3"></span></span></div>
-                                    <span>کم</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="responseBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/6th.jpg" alt="" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">پوریا زاغری</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                            </td>
-                        </tr>
+                                </td>
+                                <td>
+                                    <div class="responseBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/2nd.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">حمیدرضا مدنی</span>
+                                            <Span>۳ روز پیش</Span>
+                                        </div>
+                                </td>
+                            </tr>
 
-
-                        <!-- third person, third row -->
+                            <!-- second person, second row -->
 
 
 
 
-                        <tr class="tableRow">
-                            <td class="tableFirstColumn">
-                                <div class="tableColorTag greenTag"></div>
-                                <div class="tableTitle">
-                                    <span class="tableTitleText">خراب شدن صندلی</span>
-                                    <div class="tableTitleDescription">
-                                        <div class="tableDescriptionGrayTag"></div>
-                                        <span class="tableDescriptionText"> عمومی </span>
-                                        <div class="tableDescriptionTag">
-                                            <a href="#" class="tableDescriptionTagLink">
-                                                <i class="fal fa-tags"></i>
-                                                <span>سند , مدیریت , سازمانی</span>
-                                            </a>
+                            <tr class="tableRow">
+                                <td class="tableFirstColumn">
+                                    <div class="tableColorTag blueTag"></div>
+                                    <div class="tableTitle">
+                                        <span class="tableTitleText">خرابی لامپ های سقفی واحد سرور</span>
+                                        <div class="tableTitleDescription">
+                                            <div class="tableDescriptionGrayTag"></div>
+                                            <span class="tableDescriptionText"> عمومی </span>
+                                            <div class="tableDescriptionTag">
+                                                <a href="#" class="tableDescriptionTagLink">
+                                                    <i class="fal fa-tags"></i>
+                                                    <span>سند , مدیریت , سازمانی</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="madeBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/4th.jpg" alt="" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">محمد عصاری</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="priority">
-                                    <div class="priorityIcon"><span class="icon-medium-priority"><span
-                                                class="path1"></span><span class="path2"></span><span
-                                                class="path3"></span></span></div>
-                                    <span>متوسط</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="responseBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/7th.jpg" alt="" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">رضا شهبازی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                            </td>
-                        </tr>
-
-
-                        <!-- fourth person, fourth row -->
-
-
-
-                        <tr class="tableRow">
-                            <td class="tableFirstColumn">
-                                <div class="tableColorTag grayTag"></div>
-                                <div class="tableTitle">
-                                    <span class="tableTitleText">مشکل در نصب ویندوز</span>
-                                    <div class="tableTitleDescription">
-                                        <div class="tableDescriptionGrayTag"></div>
-                                        <span class="tableDescriptionText"> عمومی </span>
-                                        <div class="tableDescriptionTag">
-                                            <a href="#" class="tableDescriptionTagLink">
-                                                <i class="fal fa-tags"></i>
-                                                <span>سند , مدیریت , سازمانی</span>
-                                            </a>
+                                </td>
+                                <td>
+                                    <div class="madeBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/5th.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">معین قاسمی</span>
+                                            <Span>۳ روز پیش</Span>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="madeBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/8th.jpg" alt="" class="tUserPic">
+                                </td>
+                                <td>
+                                    <div class="priority">
+                                        <div class="priorityIcon"><span class="icon-low-priority"><span
+                                                    class="path1"></span><span class="path2"></span><span
+                                                    class="path3"></span></span></div>
+                                        <span>کم</span>
                                     </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">نگین رضایی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="priority">
-                                    <div class="priorityIcon"><span class="icon-medium-priority"><span
-                                                class="path1"></span><span class="path2"></span><span
-                                                class="path3"></span></span></div>
-                                    <span>متوسط</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="responseBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/4th.jpg" alt="" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">محمد عصاری</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                            </td>
-                        </tr>
+                                </td>
+                                <td>
+                                    <div class="responseBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/6th.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">پوریا زاغری</span>
+                                            <Span>۳ روز پیش</Span>
+                                        </div>
+                                </td>
+                            </tr>
 
 
-                        <!-- fifth person, fifth row -->
+                            <!-- third person, third row -->
 
 
-                        <tr class="tableRow">
-                            <td class="tableFirstColumn">
-                                <div class="tableColorTag greenTag"></div>
-                                <div class="tableTitle">
-                                    <span class="tableTitleText">عوض کردن هدفون سیستم طبقه دوم</span>
-                                    <div class="tableTitleDescription">
-                                        <div class="tableDescriptionGrayTag"></div>
-                                        <span class="tableDescriptionText"> عمومی </span>
-                                        <div class="tableDescriptionTag">
-                                            <a href="#" class="tableDescriptionTagLink">
-                                                <i class="fal fa-tags"></i>
-                                                <span>سند , مدیریت , سازمانی</span>
-                                            </a>
+
+
+                            <tr class="tableRow">
+                                <td class="tableFirstColumn">
+                                    <div class="tableColorTag greenTag"></div>
+                                    <div class="tableTitle">
+                                        <span class="tableTitleText">خراب شدن صندلی</span>
+                                        <div class="tableTitleDescription">
+                                            <div class="tableDescriptionGrayTag"></div>
+                                            <span class="tableDescriptionText"> عمومی </span>
+                                            <div class="tableDescriptionTag">
+                                                <a href="#" class="tableDescriptionTagLink">
+                                                    <i class="fal fa-tags"></i>
+                                                    <span>سند , مدیریت , سازمانی</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="madeBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">علیرضا ریاحی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="priority">
-                                    <div class="priorityIcon"><span class="icon-high-priority"></span></div>
-                                    <span>فوری</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="responseBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/9th.jpg" alt="" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">سارا کریمی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                            </td>
-                        </tr>
-
-                        <!-- sixth person, sixth row -->
-
-
-                        <tr class="tableRow">
-                            <td class="tableFirstColumn">
-                                <div class="tableColorTag grayTag"></div>
-                                <div class="tableTitle">
-                                    <span class="tableTitleText">درخواست تلفن برای واحد سرور</span>
-                                    <div class="tableTitleDescription">
-                                        <div class="tableDescriptionGrayTag"></div>
-                                        <span class="tableDescriptionText"> عمومی </span>
-                                        <div class="tableDescriptionTag">
-                                            <a href="#" class="tableDescriptionTagLink">
-                                                <i class="fal fa-tags"></i>
-                                                <span>سند , مدیریت , سازمانی</span>
-                                            </a>
+                                </td>
+                                <td>
+                                    <div class="madeBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/4th.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">محمد عصاری</span>
+                                            <Span>۳ روز پیش</Span>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="madeBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/10th.jpg" alt="" class="tUserPic">
+                                </td>
+                                <td>
+                                    <div class="priority">
+                                        <div class="priorityIcon"><span class="icon-medium-priority"><span
+                                                    class="path1"></span><span class="path2"></span><span
+                                                    class="path3"></span></span></div>
+                                        <span>متوسط</span>
                                     </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">سارینا جمشیدی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="priority">
-                                    <div class="priorityIcon"><span class="icon-high-priority"></span></div>
-                                    <span>فوری</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="responseBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/3rd.jpg" alt="" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">مصطفی حسینی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                            </td>
-                        </tr>
+                                </td>
+                                <td>
+                                    <div class="responseBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/7th.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">رضا شهبازی</span>
+                                            <Span>۳ روز پیش</Span>
+                                        </div>
+                                </td>
+                            </tr>
 
-                        <!-- seventh person, seventh row -->
 
-                        <tr class="tableRow">
-                            <td class="tableFirstColumn">
-                                <div class="tableColorTag greenTag"></div>
-                                <div class="tableTitle">
-                                    <span class="tableTitleText">خراب شدن مانیتور</span>
-                                    <div class="tableTitleDescription">
-                                        <div class="tableDescriptionGrayTag"></div>
-                                        <span class="tableDescriptionText"> عمومی </span>
-                                        <div class="tableDescriptionTag">
-                                            <a href="#" class="tableDescriptionTagLink">
-                                                <i class="fal fa-tags"></i>
-                                                <span>سند , مدیریت , سازمانی</span>
-                                            </a>
+                            <!-- fourth person, fourth row -->
+
+
+
+                            <tr class="tableRow">
+                                <td class="tableFirstColumn">
+                                    <div class="tableColorTag grayTag"></div>
+                                    <div class="tableTitle">
+                                        <span class="tableTitleText">مشکل در نصب ویندوز</span>
+                                        <div class="tableTitleDescription">
+                                            <div class="tableDescriptionGrayTag"></div>
+                                            <span class="tableDescriptionText"> عمومی </span>
+                                            <div class="tableDescriptionTag">
+                                                <a href="#" class="tableDescriptionTagLink">
+                                                    <i class="fal fa-tags"></i>
+                                                    <span>سند , مدیریت , سازمانی</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="madeBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/6th.jpg" alt="" class="tUserPic">
+                                </td>
+                                <td>
+                                    <div class="madeBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/8th.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">نگین رضایی</span>
+                                            <Span>۳ روز پیش</Span>
+                                        </div>
                                     </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">پوریا زاغری</span>
-                                        <Span>۳ روز پیش</Span>
+                                </td>
+                                <td>
+                                    <div class="priority">
+                                        <div class="priorityIcon"><span class="icon-medium-priority"><span
+                                                    class="path1"></span><span class="path2"></span><span
+                                                    class="path3"></span></span></div>
+                                        <span>متوسط</span>
                                     </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="priority">
-                                    <div class="priorityIcon"><span class="icon-low-priority"><span
-                                                class="path1"></span><span class="path2"></span><span
-                                                class="path3"></span></span></div>
-                                    <span>کم</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="responseBy">
-                                    <div class="tUserPic">
-                                        <img src="./Assets/PNG/9th.jpg" alt="" class="tUserPic">
-                                    </div>
-                                    <div class="tUserInfo">
-                                        <span class="tableTitleText">سارا کریمی</span>
-                                        <Span>۳ روز پیش</Span>
-                                    </div>
-                            </td>
-                        </tr>
+                                </td>
+                                <td>
+                                    <div class="responseBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/4th.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">محمد عصاری</span>
+                                            <Span>۳ روز پیش</Span>
+                                        </div>
+                                </td>
+                            </tr>
 
 
-                    </table>
-                </div>
-                <!-- second tab -->
-                <div id="open" class="tabcontent">
+                            <!-- fifth person, fifth row -->
 
-                </div>
-                <!-- third tab -->
-                <div id="closed" class="tabcontent">
 
+                            <tr class="tableRow">
+                                <td class="tableFirstColumn">
+                                    <div class="tableColorTag greenTag"></div>
+                                    <div class="tableTitle">
+                                        <span class="tableTitleText">عوض کردن هدفون سیستم طبقه دوم</span>
+                                        <div class="tableTitleDescription">
+                                            <div class="tableDescriptionGrayTag"></div>
+                                            <span class="tableDescriptionText"> عمومی </span>
+                                            <div class="tableDescriptionTag">
+                                                <a href="#" class="tableDescriptionTagLink">
+                                                    <i class="fal fa-tags"></i>
+                                                    <span>سند , مدیریت , سازمانی</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="madeBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/moin-ghasemi.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">علیرضا ریاحی</span>
+                                            <Span>۳ روز پیش</Span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="priority">
+                                        <div class="priorityIcon"><span class="icon-high-priority"></span></div>
+                                        <span>فوری</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="responseBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/9th.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">سارا کریمی</span>
+                                            <Span>۳ روز پیش</Span>
+                                        </div>
+                                </td>
+                            </tr>
+
+                            <!-- sixth person, sixth row -->
+
+
+                            <tr class="tableRow">
+                                <td class="tableFirstColumn">
+                                    <div class="tableColorTag grayTag"></div>
+                                    <div class="tableTitle">
+                                        <span class="tableTitleText">درخواست تلفن برای واحد سرور</span>
+                                        <div class="tableTitleDescription">
+                                            <div class="tableDescriptionGrayTag"></div>
+                                            <span class="tableDescriptionText"> عمومی </span>
+                                            <div class="tableDescriptionTag">
+                                                <a href="#" class="tableDescriptionTagLink">
+                                                    <i class="fal fa-tags"></i>
+                                                    <span>سند , مدیریت , سازمانی</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="madeBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/10th.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">سارینا جمشیدی</span>
+                                            <Span>۳ روز پیش</Span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="priority">
+                                        <div class="priorityIcon"><span class="icon-high-priority"></span></div>
+                                        <span>فوری</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="responseBy">
+                                        <div class="tUserPic">
+                                            <img src="./Assets/PNG/3rd.jpg" alt="" class="tUserPic">
+                                        </div>
+                                        <div class="tUserInfo">
+                                            <span class="tableTitleText">مصطفی حسینی</span>
+                                            <Span>۳ روز پیش</Span>
+                                        </div>
+                                </td>
+                            </tr>
+
+
+                        </table>
+                    </div>
+                    <!-- second tab -->
+                    <div id="open" class="tabcontent">
+
+                    </div>
+                    <!-- third tab -->
+                    <div id="closed" class="tabcontent">
+
+                    </div>
                 </div>
 
             </div>
@@ -717,14 +671,112 @@
                         <option class="dropdown-content"> روز گذشته</option>
                     </select>
                     <div class="tab">
-                        <button class="tablinks1 active" onclick="openCity1(event, 'starEncyclopedia')">دانشنامه‌های ستاره دار</button>
-                        <button class="tablinks1" onclick="openCity1(event, 'withoutStarEncyclopedia')">بدون ستاره</button>
+                        <button class="tablinks1 active" onclick="openCity1(event, 'starEncyclopedia')">دانشنامه‌های
+                            ستاره دار</button>
+                        <button class="tablinks1" onclick="openCity1(event, 'withoutStarEncyclopedia')">بدون
+                            ستاره</button>
                     </div>
-                   
+
                 </div>
                 <div class="encyclopediasBoxLow">
                     <div id="starEncyclopedia" class="tabcontentEn">
+                        <!-- encyclopedias table -->
+                        <table>
+                            <tr class="tableHead">
+                                <th class="titleFirstHeadingNews">عنوان</th>
+                                <th>ایجاد شده توسط</th>
+                                <th>سامانه</th>
+                            </tr>
+                            <tr class="tableRow">
+                                <td>
+                                    <span class="tableTitleText">کلمات ، تعاریف و قوانین اصلی دپارتمان سرور</span>
+                                    <div class="tableDescriptionTag">
+                                        <a href="#" class="tableDescriptionTagLink">
+                                            <i class="fal fa-tags"></i>
+                                            <span>سند،مدیریت،سازمانی</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="userNews">
+                                        <img src="./Assets/PNG/2nd.jpg" alt="" class="tUserPicNews">
+                                        <span class="newsTexts">مصطفی حسینی ، ۳ روز پیش</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="newsTexts">عمومی </span>
+                                </td>
+                            </tr>
 
+
+
+
+                            <tr class="tableRow">
+                                <td>
+                                    <span class="tableTitleText">اخلاق حرفه ای عمومی در شرکت</span>
+                                    <div class="tableDescriptionTag">
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="userNews">
+                                        <img src="./Assets/PNG/6th.jpg" alt="" class="tUserPicNews">
+                                        <span class="newsTexts">علی علیپور ، ۱ هفته پیش</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="newsTexts">ارائه فنی </span>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr class="tableRow">
+                                <td>
+                                    <span class="tableTitleText">راهنمای استفاده از پراکسی</span>
+                                    <div class="tableDescriptionTag">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="userNews">
+                                        <img src="./Assets/PNG/3rd.jpg" alt="" class="tUserPicNews">
+                                        <span class="newsTexts">جواد خدایی ، ۳ هفته پیش</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="newsTexts">عمومی </span>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr class="tableRow">
+                                <td>
+                                    <span class="tableTitleText">راه اندازی سامانه تعاملی</span>
+                                    <div class="tableDescriptionTag">
+                                        <a href="#" class="tableDescriptionTagLink">
+                                            <i class="fal fa-tags"></i>
+                                            <span>سند،مدیریت،سازمانی</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="userNews">
+                                        <img src="./Assets/PNG/8th.jpg" alt="" class="tUserPicNews">
+                                        <span class="newsTexts">نگین محمدی ، ۱ ماه پیش</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="newsTexts">متوسط </span>
+                                </td>
+                            </tr>
+
+
+
+
+                        </table>
                     </div>
                     <div id="withoutStarEncyclopedia" class="tabcontentEn">
 
@@ -739,14 +791,111 @@
                         <option class="dropdown-content"> روز گذشته</option>
                     </select>
                     <div class="tab">
-                        <button class="tablinks2 active" onclick="openCity2(event, 'starNews')">خبرهای ستاره دار</button>
+                        <button class="tablinks2 active" onclick="openCity2(event, 'starNews')">خبرهای ستاره
+                            دار</button>
                         <button class="tablinks2" onclick="openCity2(event, 'withoutStarNews')">بدون ستاره</button>
                     </div>
-                   
+
                 </div>
                 <div class="newsBoxLow">
                     <div id="starNews" class="tabcontentNews">
+                        <!-- news table -->
+                        <table>
+                            <tr class="tableHead">
+                                <th class="titleFirstHeadingNews">عنوان</th>
+                                <th>ایجاد شده توسط</th>
+                                <th>سامانه</th>
+                            </tr>
+                            <tr class="tableRow">
+                                <td>
+                                    <span class="tableTitleText">فیلم کلاس برنامه نویسی امن در وب</span>
+                                    <div class="tableDescriptionTag">
+                                        <a href="#" class="tableDescriptionTagLink">
+                                            <i class="fal fa-tags"></i>
+                                            <span>سند،مدیریت،سازمانی</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="userNews">
+                                        <img src="./Assets/PNG/2nd.jpg" alt="" class="tUserPicNews">
+                                        <span class="newsTexts">مصطفی حسینی ، ۳ روز پیش</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="newsTexts">عمومی </span>
+                                </td>
+                            </tr>
 
+
+
+
+                            <tr class="tableRow">
+                                <td>
+                                    <span class="tableTitleText">پیاده سازی یک بلاک چین ساده</span>
+                                    <div class="tableDescriptionTag">
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="userNews">
+                                        <img src="./Assets/PNG/6th.jpg" alt="" class="tUserPicNews">
+                                        <span class="newsTexts">علی علیپور ، ۱ هفته پیش</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="newsTexts">ارائه فنی </span>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr class="tableRow">
+                                <td>
+                                    <span class="tableTitleText">راهنما و دانشنامه استفاده از سامانه</span>
+                                    <div class="tableDescriptionTag">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="userNews">
+                                        <img src="./Assets/PNG/3rd.jpg" alt="" class="tUserPicNews">
+                                        <span class="newsTexts">جواد خدایی ، ۳ هفته پیش</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="newsTexts">عمومی </span>
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr class="tableRow">
+                                <td>
+                                    <span class="tableTitleText">راه اندازی سامانه تعاملی</span>
+                                    <div class="tableDescriptionTag">
+                                        <a href="#" class="tableDescriptionTagLink">
+                                            <i class="fal fa-tags"></i>
+                                            <span>سند،مدیریت،سازمانی</span>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="userNews">
+                                        <img src="./Assets/PNG/8th.jpg" alt="" class="tUserPicNews">
+                                        <span class="newsTexts">نگین محمدی ، ۱ ماه پیش</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="newsTexts">متوسط </span>
+                                </td>
+                            </tr>
+
+
+
+
+                        </table>
                     </div>
                     <div id="withoutStarNews" class="tabcontentNews">
 

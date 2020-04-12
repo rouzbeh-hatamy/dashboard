@@ -463,33 +463,38 @@ body {
     justify-content: flex-start;
     border-bottom: solid #6257E4 2px;
 }
-.messageBoxLow{
+
+.messageBoxLow {
     display: flex;
     height: 100%;
     overflow: hidden;
 }
-.nameMBox{
+
+.nameMBox {
     margin: 5px 0;
     display: flex;
     justify-content: space-between;
 }
-.tableTitleTextMBox{
+
+.tableTitleTextMBox {
     color: #404040;
     font-weight: bold;
 }
-.newPM{
+
+.newPM {
     background-color: red;
     color: white;
     border-radius: 5px;
     padding: 1px;
     font-size: 8px;
 }
-.infoMBox{
+
+.infoMBox {
     color: grey;
     padding-bottom: 6px;
 }
 
-.tableRow{
+.tableRow {
     border-bottom: 1px solid #ccc;
 }
 
@@ -501,13 +506,21 @@ body {
 
 
 
-.tabCon {
+.ticketsShow {
     display: flex;
     flex-direction: column;
     background-color: white;
     box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     border-radius: 10px;
     width: 60%;
+    padding: 10px;
+}
+
+.ticketsShowTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 .tab {
@@ -550,6 +563,18 @@ body {
 }
 
 .tabContent {
+    display: block;
+    direction: rtl;
+    border-top: none;
+}
+
+.tabcontentNews {
+    display: block;
+    direction: rtl;
+    border-top: none;
+}
+
+.tabcontentEn {
     display: block;
     direction: rtl;
     border-top: none;
@@ -601,6 +626,7 @@ th {
 
 .tableTitleText {
     font-weight: bolder;
+    font-size: 12px;
 }
 
 .tableTitleDescription {
@@ -683,7 +709,7 @@ th {
 /* encyclopedias And News Box */
 
 
-.encyclopediasAndNews{
+.encyclopediasAndNews {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -693,7 +719,7 @@ th {
 
 /* encyclopedias box */
 
-.encyclopediasBox{
+.encyclopediasBox {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -703,18 +729,18 @@ th {
     padding: 10px;
 
 }
-.encyclopediasBoxTop{
-display: flex;
-width: 100%;
-justify-content: space-between;
-flex-direction: row-reverse;
-}
-.encyclopediasBoxLow{
 
+.encyclopediasBoxTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
+
+
 
 /* news Box */
-.newsBox{
+.newsBox {
     display: flex;
     background-color: white;
     width: 45%;
@@ -724,16 +750,38 @@ flex-direction: row-reverse;
     padding: 10px;
 }
 
-.newsBoxTop{
+.newsBoxTop {
     display: flex;
     width: 100%;
     justify-content: space-between;
     flex-direction: row-reverse
 }
 
-.newsBoxLow{
 
+
+.userNews {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
 }
+
+.newsTexts {
+    font-size: 12px;
+    color: grey;
+}
+
+.titleFirstHeadingNews {
+    padding-right: 5%;
+}
+
+.tUserPicNews {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+
 
 /* fonts */
 @font-face {
@@ -847,7 +895,7 @@ flex-direction: row-reverse;
         align-items: center;
     }
 
-    .tabCon {
+    .ticketsShow {
         width: 100%;
         height: 40vh;
     }
@@ -928,7 +976,7 @@ li {
 
 
 /* message box */
-.titleMBox:hover{
+.titleMBox:hover {
     cursor: pointer;
 }
 

@@ -23,7 +23,7 @@ function openCity(evt, tabName) {
 
 function openCity1(evt, tabName) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabContentEn");
+    tabcontent = document.getElementsByClassName("tabcontentEn");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
@@ -41,7 +41,7 @@ function openCity1(evt, tabName) {
 
 function openCity2(evt, tabName) {
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabContentNews");
+    tabcontent = document.getElementsByClassName("tabcontentNews");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
