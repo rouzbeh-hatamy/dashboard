@@ -463,6 +463,36 @@ body {
     justify-content: flex-start;
     border-bottom: solid #6257E4 2px;
 }
+.messageBoxLow{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+.nameMBox{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.tableTitleTextMBox{
+    color: #404040;
+    font-weight: bold;
+}
+.newPM{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 1px;
+    font-size: 8px;
+}
+.infoMBox{
+    color: grey;
+    padding-bottom: 6px;
+}
+
+.tableRow{
+    border-bottom: 1px solid #ccc;
+}
+
 
 
 
@@ -474,7 +504,6 @@ body {
 .tabCon {
     display: flex;
     flex-direction: column;
-    width: 100%;
     background-color: white;
     box-shadow: #CCCCCC 0px 0px 3px 0.5px;
     border-radius: 10px;
@@ -571,7 +600,7 @@ th {
 }
 
 .tableTitleText {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .tableTitleDescription {
@@ -647,6 +676,64 @@ th {
     background-color: #c3c3c3;
 }
 
+
+
+
+
+/* encyclopedias And News Box */
+
+
+.encyclopediasAndNews{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 350px;
+    padding: 0 0 20px 0px;
+}
+
+/* encyclopedias box */
+
+.encyclopediasBox{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
+    border-radius: 10px;
+    width: 45%;
+    padding: 10px;
+
+}
+.encyclopediasBoxTop{
+display: flex;
+width: 100%;
+justify-content: space-between;
+flex-direction: row-reverse;
+}
+.encyclopediasBoxLow{
+
+}
+
+/* news Box */
+.newsBox{
+    display: flex;
+    background-color: white;
+    width: 45%;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
+    border-radius: 7px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.newsBoxTop{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse
+}
+
+.newsBoxLow{
+
+}
 
 /* fonts */
 @font-face {
@@ -839,6 +926,15 @@ li {
 /* third row */
 
 
+
+/* message box */
+.titleMBox:hover{
+    cursor: pointer;
+}
+
+
+
+/* tickets */
 .tab button:hover {
     background-color: #ddd;
 }
