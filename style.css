@@ -196,7 +196,7 @@ body {
 .textMessages {
     display: flex;
     width: 60%;
-    transition: width 1s, opacity 0.2s ease-in 0.7s;
+    transition: width 0.6s, opacity 0.2s ease-in 0.7s;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
@@ -222,7 +222,7 @@ body {
 .textEncyclopedias {
     display: flex;
     width: 60%;
-    transition: width 1s, opacity 0.2s ease-in 0.7s;
+    transition: width 0.6s, opacity 0.2s ease-in 0.7s;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
@@ -256,7 +256,7 @@ body {
 .textTickets {
     display: flex;
     width: 60%;
-    transition: width 1s, opacity 0.2s ease-in 0.7s;
+    transition: width 0.6s, opacity 0.2s ease-in 0.7s;
     visibility: visible;
     opacity: 1;
     flex-direction: column;
@@ -296,7 +296,7 @@ body {
     padding: 10px;
     background-color: white;
     opacity: 1;
-    transition: width 1s, opacity 0.2s ease-in 0.7s;
+    transition: width 0.6s, opacity 0.2s ease-in 0.7s;
 }
 
 .picUsers {
@@ -801,7 +801,12 @@ th {
 /* media query responsiveness */
 
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:900px) {
+    #navbar {
+        display: none;
+
+    }
+
     body {
         display: flex;
         flex-direction: column;
@@ -812,6 +817,7 @@ th {
     .sideBar {
         display: none;
         width: 100%;
+        position: unset;
     }
 
     #plusIcon {
@@ -819,6 +825,7 @@ th {
         font-size: xx-large;
         margin-bottom: 1rem;
         margin-top: 1rem;
+        overflow: hidden;
     }
 
     .lowList {
@@ -834,14 +841,16 @@ th {
 
     .content {
         display: flex;
+        margin-right: 0;
+        overflow-y: unset;
     }
 
     .quickInfo {
         display: flex;
-        width: 90%;
+        width: 100%;
         height: fit-content;
         flex-direction: column;
-        height: 100vh;
+        height: 85vh;
     }
 
     .messages {
@@ -905,13 +914,68 @@ th {
         height: 40vh;
     }
 
+    .messageBoxLow {
+        overflow: scroll;
+    }
+
     .chart-container {
         height: 100%;
     }
 
     #myChart {
-        transform: scale(1.2);
+        transform: scale(0.7);
     }
+
+    .ticketsShowLow {
+        overflow: scroll;
+    }
+
+    .encyclopediasAndNews {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .encyclopediasBox {
+        width: 100%;
+        height: 40vh;
+        overflow: scroll;
+    }
+
+    .newsBox {
+        width: 100%;
+        height: 40vh;
+        overflow: scroll;
+    }
+
+    .titleFourthHeading {
+        display: none;
+    }
+
+    .responseBy {
+        display: none;
+    }
+
+    .madeBy {
+        display: none;
+    }
+
+    .titleSecondHeading {
+        display: none;
+    }
+
+    .titleFirstHeading {
+        width: unset;
+    }
+
+    .titleThirdHeading {
+        width: unset;
+        position: relative;
+        left: -10%;
+    }
+
 }
 
 /* elements */

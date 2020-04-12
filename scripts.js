@@ -67,7 +67,7 @@ function myTimer() {
 
 //// plus icon on responsive
 function plus() {
-    let rightSide = document.getElementsByClassName("rightHandSide")[0];
+    let rightSide = document.getElementsByClassName("sideBar")[0];
     let icon = document.getElementById("plusIcon")
     let visi = rightSide.style.display;
     if (visi == "" || visi == "none") {
