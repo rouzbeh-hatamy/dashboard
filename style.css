@@ -1,3 +1,4 @@
+/* whole document */
 html {
     min-height: 100%;
     position: relative;
@@ -12,7 +13,9 @@ body {
 
 }
 
-.rightHandSide {
+/* side bar */
+
+.sideBar {
     width: 15%;
     height: 94vh;
     display: flex;
@@ -68,11 +71,7 @@ body {
     transition: 0.5s;
 }
 
-.role:hover {
-    color: rgb(98, 84, 229);
-    ;
-    cursor: pointer;
-}
+
 
 .lowList {
     width: 100%;
@@ -87,12 +86,11 @@ body {
     font-family: shabnam;
 }
 
-.col_ul li:hover {
-    color: rgb(98, 84, 229);
-    font-weight: bolder;
-}
 
-.leftHandSide {
+
+/* content */
+
+.content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -101,46 +99,50 @@ body {
     cursor: default;
     overflow-y: scroll;
 }
-.leftHandSide::-webkit-scrollbar{
+
+.content::-webkit-scrollbar {
     display: none;
 }
+
+/* nav bar */
 #navbar {
     background-color: white;
-    position: fixed; 
-    top: -50px; 
-    width: 100%; 
+    position: fixed;
+    top: -50px;
+    width: 100%;
     transition: top 0.3s;
     box-shadow: gray 0px 0px 3px 1px;
-    border-bottom-right-radius:10px;
+    border-bottom-right-radius: 10px;
     display: flex;
     height: 40px;
     padding-right: 20px;
-  }
-.searchDiv{
-width: 70%;
-display: flex;
-align-items: center;
-color: gray;
-  }
+}
 
-#search{
+.searchDiv {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+#search {
     border: none;
     font-family: shabnam;
     width: 30%;
     padding-right: 5px;
+    outline: none;
 }
-.navIcons{
+
+.navIcons {
     display: flex;
     width: 10%;
     align-items: center;
     color: gray;
     justify-content: space-around;
 }
-.navIcons i:hover{
-    cursor: pointer;
-}
 
-[id*="topNotif"]{
+
+[id*="topNotif"] {
     background-color: red;
     color: white;
     border-radius: 40%;
@@ -151,7 +153,8 @@ color: gray;
     top: -21%;
     left: -46%;
 }
-.topLeft {
+
+.quickInfo {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -159,20 +162,17 @@ color: gray;
     flex-direction: row-reverse;
 }
 
+
+/* plus icon */
+
+
 #plusIcon {
     display: none;
 }
 
-ul {
-    list-style-type: none;
-    font-size: 12px;
-    padding: 0px;
-}
+/* qiuck info row */
 
-li {
-    margin: 9px 0;
-}
-
+/* messages */
 .messages {
     display: flex;
     flex-direction: row-reverse;
@@ -196,12 +196,16 @@ li {
 .textMessages {
     display: flex;
     width: 60%;
-    transition: width 1s ,opacity 0.2s ease-in 0.7s;
+    transition: width 1s, opacity 0.2s ease-in 0.7s;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
     background-color: white;
 }
+
+
+/* encyclopedias */
+
 
 .encyclopedias {
     display: flex;
@@ -218,7 +222,7 @@ li {
 .textEncyclopedias {
     display: flex;
     width: 60%;
-    transition: width 1s ,opacity 0.2s ease-in 0.7s;
+    transition: width 1s, opacity 0.2s ease-in 0.7s;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
@@ -234,6 +238,10 @@ li {
     align-items: center;
 }
 
+
+/* tickets */
+
+
 .tickets {
     display: flex;
     flex-direction: row-reverse;
@@ -244,27 +252,11 @@ li {
     transition: width 1s;
 }
 
-.users:hover .textUsers,
-.messages:hover .textMessages,
-.encyclopedias:hover .textEncyclopedias,
-.tickets:hover .textTickets {
-    width: 0%;
-    visibility: hidden;
-    opacity: 0;
-    padding: 0;
-}
-
-.users:hover,
-.tickets:hover,
-.encyclopedias:hover,
-.messages:hover {
-    cursor: pointer;
-}
 
 .textTickets {
     display: flex;
     width: 60%;
-    transition: width 1s ,opacity 0.2s ease-in 0.7s;
+    transition: width 1s, opacity 0.2s ease-in 0.7s;
     visibility: visible;
     opacity: 1;
     flex-direction: column;
@@ -281,6 +273,11 @@ li {
     justify-content: center;
     align-items: center;
 }
+
+
+/* users */
+
+
 
 .users {
     display: flex;
@@ -299,7 +296,7 @@ li {
     padding: 10px;
     background-color: white;
     opacity: 1;
-    transition: width 1s ,opacity 0.2s ease-in 0.7s;
+    transition: width 1s, opacity 0.2s ease-in 0.7s;
 }
 
 .picUsers {
@@ -326,13 +323,21 @@ li {
     border-bottom-right-radius: 7px;
 }
 
-.midLeft {
+
+/* second row */
+
+
+.EditAndSummary {
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: 300px;
     padding: 20px 0;
 }
+
+
+/* summary */
+
 
 .summary {
     display: flex;
@@ -371,6 +376,132 @@ li {
     width: fit-content;
     height: fit-content;
 }
+
+.dropdown-content {
+    background-color: rgb(225, 227, 250);
+    font-weight: bold;
+
+}
+
+.sumLow {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
+/* edit */
+
+
+
+.edit {
+    display: flex;
+    border-radius: 10px;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
+    background-image: linear-gradient(to bottom right, rgb(141, 95, 229), rgb(140, 146, 233));
+    width: 60%;
+    flex-direction: row-reverse;
+}
+
+.editIcon {
+    cursor: pointer;
+    height: fit-content;
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+/* third row tickets and messages */
+
+
+
+.ticketAndMessages {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 350px;
+    padding: 0 0 20px 0px;
+}
+
+
+
+/* message box */
+
+
+
+.messageBox {
+    display: flex;
+    background-color: white;
+    width: 30%;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
+    border-radius: 7px;
+    flex-direction: column;
+    padding: 10px
+}
+
+.messageBoxTop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.messageBoxTextDiv {
+    display: flex;
+    font-family: shabnam;
+    width: 25%;
+    justify-content: flex-start;
+    border-bottom: solid #6257E4 2px;
+}
+
+
+
+/* show tickets */
+
+
+
+
+.tabCon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.tab {
+    overflow: hidden;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: shabnam;
+    opacity: 0.5;
+
+}
+
 .dropbtn1 {
     font-family: shabnam;
     display: flex;
@@ -388,219 +519,136 @@ li {
     top: 5%;
     left: 2%;
 }
-.dropdown-content {
-    background-color: rgb(225, 227, 250);
-    font-weight: bold;
-
-}
-
-.edit {
-    display: flex;
-    border-radius: 10px;
-    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
-    background-image: linear-gradient(to bottom right, rgb(141, 95, 229), rgb(140, 146, 233));
-    width: 60%;
-    flex-direction: row-reverse;
-}
-.editIcon{
-    cursor: pointer;
-    height: fit-content;
-    font-size: 20px;
-    padding: 10px;
-}
-
-.sumLow {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-.chart-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.lowLeft {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 350px;
-    padding: 0 0 20px 0px;
-}
-
-.messageBox {
-    display: flex;
-    background-color: white;
-    width: 30%;
-    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
-    border-radius: 7px;
-    flex-direction: column;
-    padding: 10px
-
-}
-
-.messageBoxTop {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-}
-.messageBoxTextDiv{
-    display: flex;
-    font-family: shabnam;
-    width: 25%;
-    justify-content: flex-start;
-    border-bottom: solid #6257E4 2px;
-}
-
-.tabCon {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: white;
-    box-shadow: #CCCCCC 0px 0px 3px 0.5px;
-    border-radius: 10px;
-    width: 60%;
-}
-
-.tab {
-    overflow: hidden;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-family: shabnam;
-    opacity: 0.5;
-
-}
-
-.tab button:hover {
-    background-color: #ddd;
-}
-
-.tab button.active {
-    border-bottom: solid 2px rgb(97, 112, 227);
-    opacity: 1;
-
-}
 
 .tabContent {
     display: block;
     direction: rtl;
     border-top: none;
 }
-#starTicket{
+
+/* first tab */
+
+#starTicket {
     overflow-y: scroll;
 }
-#starTicket::-webkit-scrollbar{
+
+#starTicket::-webkit-scrollbar {
     display: none;
 }
-table{
+
+/* table */
+
+table {
     width: 100%;
     font-family: shabnam;
     font-size: 10px;
     border-collapse: collapse;
 }
-.tableRow:hover{
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
-    cursor: pointer;
-}
-.tableHead{
+
+.tableHead {
     background-color: #efefef;
     color: black;
     padding: 0 20px;
     height: 30px;
 }
-.titleFirstHeading{
+
+.titleFirstHeading {
     width: 35%;
     padding-right: 5%;
 }
-.titleThirdHeading{
+
+.titleThirdHeading {
     width: 20%;
 }
-th{
+
+th {
     text-align: right;
 }
-.tableFirstColumn{
+
+.tableFirstColumn {
     display: flex;
     padding: 0 10px;
 }
-.tableTitleText{
-  font-weight: bold;
+
+.tableTitleText {
+    font-weight: bold;
 }
-.tableTitleText:hover{
-    cursor: pointer;
+
+.tableTitleDescription {
+    display: flex;
+    justify-content: space-between;
 }
-.tableTitleDescription{
-display: flex;
-justify-content: space-between;
-}
-.tableDescriptionText{
+
+.tableDescriptionText {
     padding: 0 10px;
 }
-.tableColorTag{
+
+.tableColorTag {
     width: 3%;
     height: 3vh;
     border-radius: 5px;
     display: flex;
-    align-items: center;
-    align-self: center;
+    align-self: flex-end;
 }
-.tableDescriptionTagLink{
+
+.tableDescriptionTagLink {
     text-decoration: none;
     color: blue;
 }
-.tableDescriptionGrayTag{
+
+.tableDescriptionGrayTag {
     width: 1vw;
     height: 1vw;
     background-color: #ddd;
     border-radius: 0.3vw;
 }
-.tUserPic{
+
+.tUserPic {
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
-.madeBy , .responseBy{
+
+.madeBy,
+.responseBy {
     display: flex;
     align-items: center;
 }
-.tUserInfo{
+
+.tUserInfo {
     display: flex;
     flex-direction: column;
     padding-right: 20px;
 }
-.priority{
+
+.priority {
     display: flex;
     align-items: center;
 }
-.priorityIcon{
+
+.priorityIcon {
     padding-left: 10px;
 }
-.tableTitle{
+
+.tableTitle {
     padding: 0 10px;
 }
 
-.blueTag{
+/* color tags ticket table */
+.blueTag {
     background-color: #60C9F8;
 }
 
+.greenTag {
+    background-color: #79e080;
+}
+
+.grayTag {
+    background-color: #c3c3c3;
+}
 
 
-
+/* fonts */
 @font-face {
     font-family: Shabnam;
     src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot');
@@ -611,6 +659,13 @@ justify-content: space-between;
     font-weight: normal;
 }
 
+
+
+
+
+/* media query responsiveness */
+
+
 @media screen and (max-width:500px) {
     body {
         display: flex;
@@ -619,7 +674,7 @@ justify-content: space-between;
         width: inherit;
     }
 
-    .rightHandSide {
+    .sideBar {
         display: none;
         width: 100%;
     }
@@ -642,11 +697,11 @@ justify-content: space-between;
         height: 100px;
     }
 
-    .leftHandSide {
+    .content {
         display: flex;
     }
 
-    .topLeft {
+    .quickInfo {
         display: flex;
         width: 90%;
         height: fit-content;
@@ -672,13 +727,6 @@ justify-content: space-between;
         width: 100%;
     }
 
-    .tickets:hover,
-    .messages:hover,
-    .users:hover,
-    .encyclopedias:hover {
-        width: 110%;
-    }
-
     .users {
         display: flex;
         justify-content: center;
@@ -688,7 +736,7 @@ justify-content: space-between;
 
     }
 
-    .midLeft {
+    .EditAndSummary {
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -705,7 +753,7 @@ justify-content: space-between;
         height: 40vh;
     }
 
-    .lowLeft {
+    .ticketAndMessages {
         flex-direction: column;
         width: 100%;
         height: 100vh;
@@ -721,10 +769,92 @@ justify-content: space-between;
         width: 100%;
         height: 40vh;
     }
-    .chart-container{
+
+    .chart-container {
         height: 100%;
     }
-    #myChart{
+
+    #myChart {
         transform: scale(1.2);
     }
+}
+
+/* elements */
+
+ul {
+    list-style-type: none;
+    font-size: 12px;
+    padding: 0px;
+}
+
+li {
+    margin: 9px 0;
+}
+
+
+
+
+
+
+/* //////////   HOVERS   \\\\\\\\\\ */
+
+
+
+/* side bar */
+.col_ul li:hover {
+    color: rgb(98, 84, 229);
+    font-weight: bolder;
+}
+
+.role:hover {
+    color: rgb(98, 84, 229);
+    ;
+    cursor: pointer;
+}
+
+/* nav */
+.navIcons i:hover {
+    cursor: pointer;
+}
+
+/* first row */
+.users:hover .textUsers,
+.messages:hover .textMessages,
+.encyclopedias:hover .textEncyclopedias,
+.tickets:hover .textTickets {
+    width: 0%;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+}
+
+.users:hover,
+.tickets:hover,
+.encyclopedias:hover,
+.messages:hover {
+    cursor: pointer;
+}
+
+
+/* third row */
+
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    border-bottom: solid 2px rgb(97, 112, 227);
+    opacity: 1;
+
+}
+
+/* table */
+
+.tableFirstColumn:hover {
+    cursor: pointer;
+}
+
+.tableRow:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
